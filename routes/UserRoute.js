@@ -3,7 +3,6 @@ const jwt = require("jsonwebtoken");
 const Router = require("express");
 const crypto = require("node:crypto");
 const UserRoute = Router();
-const Document = require("../models/DocumentSchema");
 const multer = require("multer");
 
 const storage = multer.diskStorage({

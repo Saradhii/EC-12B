@@ -1,8 +1,8 @@
 const connection = require("./db/db");
 const express = require("express");
 const cors = require("cors");
-const PatientsRoute = require("./routes/PatientsRoute");
 const UserRoute = require("./routes/UserRoute");
+const NftRoute = require("./routes/NftRoute");
 
 // App creation
 const app = express();
@@ -14,13 +14,13 @@ app.use(
       origin: ["http://localhost:3000","https://harmonious-clafoutis-0cfde6.netlify.app"],
     })
   );
-app.use("/static",express.static("./Documents"));
-app.use("/patient",PatientsRoute);
+app.use("/static",express.static("./Nfts"));
+app.use("/nft",NftRoute);
 app.use("/user",UserRoute);
 
 //testing
 app.get("/",(req,res)=>{
-  res.send("Mock11 working....")
+  res.send("e-12 backend working....")
 })
 
 // starting the server && checking db connection
