@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(
     cors({
-      origin: ["http://localhost:3000","https://harmonious-clafoutis-0cfde6.netlify.app"],
+      origin: ["http://localhost:3000","https://e12.vercel.app"],
     })
   );
 app.use("/static",express.static("./Nfts"));
