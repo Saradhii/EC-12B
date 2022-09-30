@@ -6,7 +6,7 @@ const NftRoute = require("./routes/NftRoute");
 
 
 const app = express();
-//Needed middlewares
+
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(
