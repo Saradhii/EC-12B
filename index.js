@@ -18,7 +18,6 @@ app.use("/static",express.static("./Nfts"));
 app.use("/nft",NftRoute);
 app.use("/user",UserRoute);
 
-//testing
 app.get("/",(req,res)=>{
   res.send("e-12 backend working....")
 })
