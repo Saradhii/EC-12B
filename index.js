@@ -22,7 +22,7 @@ app.get("/",(req,res)=>{
   res.send("e-12 backend working....")
 })
 
-// starting the server && checking db connection
+
 const PORT = process.env.PORT || 8060
 app.listen(PORT, async () => {
     try {
