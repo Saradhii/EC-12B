@@ -4,7 +4,6 @@ const cors = require("cors");
 const UserRoute = require("./routes/UserRoute");
 const NftRoute = require("./routes/NftRoute");
 
-
 const app = express();
 
 app.use(express.urlencoded({extended:true}));
